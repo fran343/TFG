@@ -22,9 +22,19 @@ Partial Class etiquetaPaquete
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.SuspendLayout()
+        '
+        'etiquetaPaquete
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Name = "etiquetaPaquete"
         Me.Text = "etiquetaPaquete"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
