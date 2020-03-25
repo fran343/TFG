@@ -41,6 +41,7 @@ Partial Class Mpaquetes
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,7 +53,7 @@ Partial Class Mpaquetes
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(111, 101)
+        Me.Label1.Location = New System.Drawing.Point(245, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 4
@@ -61,7 +62,7 @@ Partial Class Mpaquetes
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(111, 133)
+        Me.Label2.Location = New System.Drawing.Point(245, 149)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 5
@@ -70,7 +71,7 @@ Partial Class Mpaquetes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(111, 160)
+        Me.Label3.Location = New System.Drawing.Point(245, 176)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(31, 13)
         Me.Label3.TabIndex = 6
@@ -79,7 +80,7 @@ Partial Class Mpaquetes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(111, 191)
+        Me.Label4.Location = New System.Drawing.Point(245, 207)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(38, 13)
         Me.Label4.TabIndex = 7
@@ -88,7 +89,7 @@ Partial Class Mpaquetes
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(111, 221)
+        Me.Label5.Location = New System.Drawing.Point(245, 237)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 13)
         Me.Label5.TabIndex = 8
@@ -97,7 +98,7 @@ Partial Class Mpaquetes
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(111, 248)
+        Me.Label6.Location = New System.Drawing.Point(245, 264)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 9
@@ -139,51 +140,60 @@ Partial Class Mpaquetes
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(185, 98)
+        Me.TextBox2.Location = New System.Drawing.Point(319, 114)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(108, 20)
         Me.TextBox2.TabIndex = 17
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(185, 130)
+        Me.TextBox3.Location = New System.Drawing.Point(319, 146)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(108, 20)
         Me.TextBox3.TabIndex = 18
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(185, 157)
+        Me.TextBox4.Location = New System.Drawing.Point(319, 173)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(108, 20)
         Me.TextBox4.TabIndex = 19
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(185, 247)
+        Me.TextBox5.Location = New System.Drawing.Point(319, 263)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(108, 20)
         Me.TextBox5.TabIndex = 22
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(185, 220)
+        Me.TextBox6.Location = New System.Drawing.Point(319, 236)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(108, 20)
         Me.TextBox6.TabIndex = 21
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(185, 188)
+        Me.TextBox7.Location = New System.Drawing.Point(319, 204)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(246, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(108, 20)
         Me.TextBox7.TabIndex = 20
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(31, 114)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(184, 173)
+        Me.ListBox1.TabIndex = 23
         '
         'Mpaquetes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(795, 450)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox7)
@@ -225,4 +235,5 @@ Partial Class Mpaquetes
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents ListBox1 As ListBox
 End Class
